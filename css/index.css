@@ -7,9 +7,13 @@
   font: 12px 'Hiragino Sans GB',"simsun","Arial";
   color: #646464;
   line-height: 34px;
+  padding: 0 10px 0 10px;
 }
 .nav-item{
   margin:auto;width: 1200px; 
+}
+.vip:hover{
+  color: red !important;
 }
 .nav-item ul {
   padding-left: 20px;
@@ -21,4 +25,69 @@
     background: url(http://img63.ddimg.cn/upload_img/00459/home/home_sprite2.png) no-repeat -40px -86px;;
     width: 15px ;
     height: 14px  ;
+}
+/* 搜索 */
+搜索 logo 
+.layout{
+  padding: 0 10px 0 10px;
+}
+.layout-item{
+  margin:auto;width: 1200px; 
+}
+/* 搜索框 */
+.search{
+  width: 438px;
+  height: 18px;
+  border: 2px solid #ff2832;
+  padding: 9px 0 9px 10px;
+  color: #323232;
+  font: 12px/18px 'Hiragino Sans GB',"simsun",Arial;
+  background: none;
+}
+.mt-20{
+  margin-top:20px;
+}
+.button{
+  width: 48px;
+  height: 40px;
+  background: url(http://img63.ddimg.cn/upload_img/00459/home/head_sprite.png) no-repeat 0 -346px;
+}
+.shopping{
+  width: 111px;
+  height: 40px;
+  background:#FF2832;
+  margin-left: 50px;
+  position: relative;
+}
+.shopping:hover{
+  color: red;
+  background: #F6F6F6;
+}
+.shopping img{
+  position: absolute;
+  width:28%;
+  top:4px;
+  left: 4px;
+}
+/* 购物车 */
+.shopping-item{
+  position: absolute;
+  left: 45px;
+  color: #fff;
+  font: 15px 'Hiragino Sans GB',"simsun","Arial";
+  top:12px;
+}
+
+/* 订单 */
+.order{
+  width: 88px;
+  height: 36px;
+  background: #F6F6F6;
+  border: 2px solid #DCDCDC;
+}
+.order span{
+  color: #646464;
+  font-size: 15px;
+  line-height: 36px;
+  margin-left: 14px;
 }
