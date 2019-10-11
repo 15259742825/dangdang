@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/normalize_zh.css">
   <script src="js/jquery.js"></script>
-  <script src="js/index.js"></script>
+  
 </head>
 <body>
   <div class="nav">
@@ -25,12 +25,19 @@
         <ul style="display: flex;">
           <li><img style="margin-right: 10px;" src="img/index/car.png" alt="">购物车0</li>
           <li>我的订单</li>
+          <span><i></i></span>
           <li>我的云书房</li>
+          <span><i></i></span>
           <li>我的当当</li>
+          <span><i></i></span>
           <li>0元领物</li>
+          <span><i></i></span>
           <li>小说投稿</li>
+          <span><i></i></span>
           <li>我要出书</li>
+          <span><i></i></span>
           <li>企业采购</li>
+          <span><i></i></span>
           <li>客户服务</li>
         </ul>
       </div>
@@ -41,20 +48,33 @@
     <div style="display: flex;" class="layout-item">
        <div><img src="img/index/logo.gif" alt=""></div>
        <div class="mt-20">
-        <input class="search" type="text">
-      </div> 
-      <input style="margin-top: 20px;" type="button" class="button">
-      <a href="">
+        <input placeholder="诺贝尔文学奖" class="search" type="text">
+        <div class="search-bottom">
+          <ul style="display: flex;">
+            <li style="padding-top: 10px">热搜: </li>
+            <li>安奈儿</li>
+            <li>格林童话</li>
+            <li>幼儿学古诗</li>
+            <li>三只松鼠</li>
+            <li>残雪</li>
+            <li>秒杀1元抢</li>
+          </ul>
+        </div>
+      </div>
+      <a class="button mt-20" href="">
+        <input  type="button" style="margin-top: 20px;" type="button" >
+      </a>
       <div class="shopping mt-20">
         <div>
           <img src="img/index/shoppingcart.png" alt="">
           <a class="shopping-item" href="">购物车0</a>
         </div>
-      </div></a>
+      </div>
       <div class="order mt-20">
         <span>我的订单</span>
       </div>
     </div>
   </div>
 </body>
+<script src="js/index.js"></script>
 </html>

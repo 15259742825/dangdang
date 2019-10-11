@@ -19,7 +19,10 @@
   padding-left: 20px;
 }
 .nav-item ul li{
-  padding: 0 12px 0 8px;
+  padding: 0 9px 0 10px;
+}
+.nav-item span i{
+  border-right:1px solid red;
 }
 .car{
     background: url(http://img63.ddimg.cn/upload_img/00459/home/home_sprite2.png) no-repeat -40px -86px;;
@@ -36,7 +39,7 @@
 }
 /* 搜索框 */
 .search{
-  width: 438px;
+  width: 500px;
   height: 18px;
   border: 2px solid #ff2832;
   padding: 9px 0 9px 10px;
@@ -51,13 +54,15 @@
   width: 48px;
   height: 40px;
   background: url(http://img63.ddimg.cn/upload_img/00459/home/head_sprite.png) no-repeat 0 -346px;
+  
 }
 .shopping{
   width: 111px;
   height: 40px;
   background:#FF2832;
-  margin-left: 50px;
+  margin-left: 90px;
   position: relative;
+  cursor: pointer;
 }
 .shopping:hover{
   color: red;
@@ -84,10 +89,18 @@
   height: 36px;
   background: #F6F6F6;
   border: 2px solid #DCDCDC;
+  cursor: pointer;
 }
 .order span{
   color: #646464;
   font-size: 15px;
   line-height: 36px;
   margin-left: 14px;
+}
+.search-bottom{
+  color: #969696;
+  font-size: 12px;
+}
+.search-bottom li+li{
+  padding: 10px 10px 0 0;
 }
