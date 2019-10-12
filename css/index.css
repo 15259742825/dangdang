@@ -59,20 +59,30 @@
 .shopping{
   width: 111px;
   height: 40px;
-  background:#FF2832;
+  background-color:#FF2832;
   margin-left: 90px;
   position: relative;
   cursor: pointer;
+  
 }
 .shopping:hover{
-  color: red;
   background: #F6F6F6;
 }
-.shopping img{
+.shopping-car {
+  width: 100%;
+  height: 100%;
+  background: url(http://img62.ddimg.cn/upload_img/00459/home/icon_cart.png) 5px 0  no-repeat #ff2832;
+  color: #F6F6F6
+}
+.shopping-car div{
   position: absolute;
-  width:28%;
-  top:4px;
-  left: 4px;
+  line-height: 40px;
+  left: 40px;
+}
+.shopping-car:hover {
+  background-position:5px -40px ; 
+  background-color: #F6F6F6;
+  color: #FF2832 !important;
 }
 /* 购物车 */
 .shopping-item{
@@ -82,6 +92,7 @@
   font: 15px 'Hiragino Sans GB',"simsun","Arial";
   top:12px;
 }
+
 
 /* 订单 */
 .order{
