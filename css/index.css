@@ -142,7 +142,7 @@
 /* 中部导航 */
 .home_nav{
   width: 200px;
-  height: 488px;
+  height: 520px;
   background: #FAFAFA;
 }
 .home_nav li{padding: 0 1px 0 16px;}
@@ -150,3 +150,82 @@
   color: #323232;
   font: 14px/32px "Microsoft Yahei";
 }
+/* 轮播*/
+  
+#main {
+  width: 796px;
+}
+
+#banner {
+  width: 796px;
+  overflow: hidden;
+  position: relative;
+}
+
+#ul-imgs {
+  list-style: none;
+}
+
+#ul-imgs.transition {
+  transition: all .5s linear;
+}
+
+#ul-imgs>li {
+  width: 1000px;
+  float: left;
+}
+#ul-idxs {
+  width: 500px;
+  margin: 0 auto;
+  list-style: none;
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  margin-left: -50px;
+  color: #fff;
+  line-height: 20px;
+}
+
+#ul-idxs>li {
+  text-align: center;
+  float: left;
+  width: 20px;
+  height: 20px;
+  background-color: #646464;
+  border-radius: 100%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+#ul-idxs>li.active {
+  background-color: red;
+}
+
+#btn-left,
+#btn-right {
+  top:130px;
+  width: 33px;
+  height:70px;
+  position: absolute;
+  cursor: pointer;
+  background: #CCCCCC;
+  opacity: .7;
+}
+
+#btn-left,
+#btn-right img {
+  line-height: 80px;
+}
+#btn-left img{
+  padding-left: 6px;
+}
+#btn-right img{
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+
+#btn-right {
+  right: 0px;
+}
+
