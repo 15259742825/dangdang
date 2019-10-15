@@ -1,8 +1,8 @@
 // 轮播
 var i = 0;
-var LIWIDTH = 1000;
+var LIWIDTH = 796;
 var DURATION = 500;
-var LICOUNT = 4;
+var LICOUNT = 8;
 var ulImgs = document.getElementById("ul-imgs");
 var ulIdxs = document.getElementById("ul-idxs");
 var lis = ulIdxs.children;
@@ -40,55 +40,57 @@ function moveTo(to) {
 }
 
 var btnLeft = document.getElementById("btn-left");
-        var btnRight = document.getElementById("btn-right");
-        var canClick = true;
-        btnRight.onclick = function() {
-            move(1)
-        }
+var btnRight = document.getElementById("btn-right");
+var canClick = true;
+btnRight.onclick = function() {
+    move(1)
+}
 
-        function move(n) {
-            if (canClick) {
-                console.log(i + n);
-                moveTo(i + n);
-                canClick = false;
-                setTimeout(function() {
-                    canClick = true;
-                }, DURATION + 100);
-            }
-        }
-        btnLeft.onclick = function() {
-            move(-1);
-        }
-        var interval = 3000;
-        var timer = setInterval(function() {
-            moveTo()
-        }, 3000);
-        var banner = document.getElementById("banner");
-        banner.onmouseover = function() {
-            clearInterval(timer);
-        }
-        banner.onmouseout = function() {
-            timer = setInterval(function() {
-                moveTo()
-            }, 3000)
-        }
-        var ulIdxs = document.getElementById("ul-idxs");
-        var canClick = true;
-        ulIdxs.onclick = function(e) {
-            if (canClick) {
-                var li = e.target;
-                if (li.nodeName == "LI") {
-                    if (li.className !== "active") {
-                        for (var i = 0; i < lis.length; i++) {
-                            if (lis[i] == li) {
-                                break;
-                            }
-                        }
-                        moveTo(i);
-                        setTimeout(function() {
-                            canClick = true;
-                        }, DURATION);
+function move(n) {
+    if (canClick) {
+        console.log(i + n);
+        moveTo(i + n);
+        canClick = false;
+        setTimeout(function() {
+            canClick = true;
+        }, DURATION + 100);
+    }
+}
+btnLeft.onclick = function() {
+    move(-1);
+}
+
+var interval = 3000;
+var timer = setInterval(function() {
+    moveTo()
+}, 3000);
+var banner = document.getElementById("banner");
+banner.onmouseover = function() {
+    clearInterval(timer);
+}
+banner.onmouseout = function() {
+    timer = setInterval(function() {
+        moveTo()
+    }, 3000)
+}
+
+var ulIdxs = document.getElementById("ul-idxs");
+var canClick = true;
+ulIdxs.onclick = function(e) {
+    if (canClick) {
+        var li = e.target;
+        if (li.nodeName == "LI") {
+            if (li.className !== "active") {
+                for (var i = 0; i < lis.length; i++) {
+                    if (lis[i] == li) {
+                        break;
                     }
                 }
+                moveTo(i);
+                setTimeout(function() {
+                    canClick = true;
+                }, DURATION);
             }
         }
+    }
+}
