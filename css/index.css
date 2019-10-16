@@ -235,3 +235,20 @@
   border: 1px solid #E6E6E6;
   width: 100%;
 }
+
+.tabs{
+  width: 202px;
+  height: 143px;
+}
+#tab li{
+  width: 50%;
+  height: 29px;
+  border: 1px solid #e6e6e6;
+  line-height: 29px;
+  text-align: center;
+  background-color: #fff;
+}
+#tab li a{
+  color: #646464;
+  font: 14px/29px "Microsoft Yahei";
+}
