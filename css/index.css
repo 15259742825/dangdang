@@ -142,13 +142,13 @@
 /* 中部导航 */
 .home_nav{
   width: 200px;
-  height: 520px;
+  height: 494px;
   background: #FAFAFA;
 }
 .home_nav li{padding: 0 1px 0 16px;}
 .home_nav a{
   color: #323232;
-  font: 14px/32px "Microsoft Yahei";
+  font: 14px/31px "Microsoft Yahei";
 }
 /* 轮播*/
 #main {
@@ -228,6 +228,10 @@
   background-image: url(/img/index/right.png);
 }
 /* 开头轮播下面的图 */
-.ul-imgs>li>ul>li>img{
-  width: 198px;
+#ul-imgs>li>ul>li{
+  width: 24.95%;
+}
+#ul-imgs>li>ul>li>a img{
+  border: 1px solid #E6E6E6;
+  width: 100%;
 }
