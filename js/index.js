@@ -8,7 +8,6 @@
     var ulImgs = document.getElementById("ul-imgs");
     var ulIdxs = document.getElementById("ul-idxs");
     var lis = ulIdxs.children;
-    
     function moveTo(to) {
         if (to == undefined) {
             to = i + 1;

@@ -235,7 +235,7 @@
   border: 1px solid #E6E6E6;
   width: 100%;
 }
-
+/* 轮播右边 */
 .tabs{
   width: 202px;
   height: 143px;
@@ -243,7 +243,6 @@
 #tab li{
   width: 50%;
   height: 29px;
-  border: 1px solid #e6e6e6;
   line-height: 29px;
   text-align: center;
   background-color: #fff;
@@ -251,4 +250,16 @@
 #tab li a{
   color: #646464;
   font: 14px/29px "Microsoft Yahei";
+}
+
+#container{
+  height: 136px;
+  border-bottom: 1px solid #DCDCDC;
+}
+#content1,#content2 ul li{
+  color: #646464 ;
+  font-family: "Microsoft Yahei";
+  font-size: 12px;
+  height: 25px;
+  line-height: 25px;
 }
