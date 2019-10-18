@@ -236,10 +236,37 @@
   width: 100%;
 }
 /* 轮播右边 */
-.tabs{
+ /* #tabs{
   width: 202px;
   height: 143px;
 }
+#tabs li{
+  width: 50%;
+  height: 29px;
+  line-height: 29px;
+  text-align: center;
+  background-color: #fff;
+}
+.items li a{
+  color: #646464;
+  font: 14px/29px "Microsoft Yahei";
+}
+
+.items{
+  height: 136px;
+  border-bottom: 1px solid #DCDCDC;
+}
+.items ul li{
+  color: #646464 ;
+  font-family: "Microsoft Yahei";
+  font-size: 12px;
+  height: 25px;
+  line-height: 25px;
+}
+#tab li{
+	float: left; list-style: none;
+}  */
+
 #tab li{
   width: 50%;
   height: 29px;
@@ -247,19 +274,25 @@
   text-align: center;
   background-color: #fff;
 }
-#tab li a{
-  color: #646464;
-  font: 14px/29px "Microsoft Yahei";
-}
-
-#container{
-  height: 136px;
-  border-bottom: 1px solid #DCDCDC;
-}
-#content1,#content2 ul li{
+.items ul li{
+  background: url(http://img60.ddimg.cn/upload_img/00111/home/home_sprite_1507.png) no-repeat 10px -188px;
   color: #646464 ;
   font-family: "Microsoft Yahei";
   font-size: 12px;
   height: 25px;
   line-height: 25px;
+  padding-left: 20px;
+}
+.items li a{
+  color: #646464;
+  font: 10px "Microsoft Yahei";
+}
+
+.items{
+  height: 136px;
+  border-bottom: 1px solid #DCDCDC;
+}
+
+.items ul{
+  margin-top: 10px;
 }
