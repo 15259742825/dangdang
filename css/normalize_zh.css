@@ -4,3 +4,6 @@ ul{list-style: none;}
 *{padding:0px;margin:0px;}
 input,button{outline: none;border: none;}
 button{ cursor: pointer;}
+img{
+  display: block;
+}

@@ -14,8 +14,10 @@
   <div id="app">
   <div class="nav">
     <div class="nav-item">
-      <div style="display: flex;">送至：北京
-        <span style="margin-left: 300px;">
+      <div style="display: flex;">
+        
+        <span style="padding-left: 0;">送至：北京</span> 
+        <span style="margin-left: 280px;">
           欢迎光临当当、请
           <a style="color: red" href="">
             登录
@@ -23,23 +25,25 @@
           <a style="color: #646464" class="vip" href="">成为会员</a>
           </span>
         
-        <ul style="display: flex;">
-          <li><img style="margin-right: 10px;" src="img/index/car.png" alt="">购物车0</li>
-          <li>我的订单</li>
+        <ul style="display: flex;margin-left: 1px;">
+          <i style="width: 5px;" class="car1"></i>
+          <li ><a href="">购物车0</a> </li>
           <span><i></i></span>
-          <li>我的云书房</li>
+          <li><a href="">我的订单</a> </li>
           <span><i></i></span>
-          <li>我的当当</li>
+          <li><a href="">我的云书房</a> </li>
           <span><i></i></span>
-          <li>0元领物</li>
+          <li><a class="bg" href="">我的当当</a> </li>
           <span><i></i></span>
-          <li>小说投稿</li>
+          <li><a class="bg" href="">0元领物</a> </li>
           <span><i></i></span>
-          <li>我要出书</li>
+          <li><a href="">小说投稿</a> </li>
           <span><i></i></span>
-          <li>企业采购</li>
+          <li><a href="">我要出书</a> </li>
           <span><i></i></span>
-          <li>客户服务</li>
+          <li><a class="bg" href="">企业采购</a></li>
+          <span><i></i></span>
+          <li ><a class="bg" href="javascript:;">客户服务</a> </li>
         </ul>
       </div>
     </div>
@@ -131,15 +135,15 @@
         <main id="main">
           <div id="banner">
               <div id="btn-left"></div>
-              <ul id="ul-imgs" class="transition" style="width:7319.9px; margin-left:0px;">
-                  <li>
-                      <a href="javascript:;"><img src="img/index/lunbo1.jpg" alt=""></a>
-                      <ul style=" margin: 0 !important;padding: 0 !important; background: #646464;" class="df">
-                          <li><a href=""><img  src="img/index/lunbo-bottom1-1.jpg" alt=""></a></li>
-                          <li><a href=""><img  src="img/index/lunbo-bottom1-2.jpg" alt=""></a></li>
-                          <li><a href=""><img  src="img/index/lunbo-bottom1-3.jpg" alt=""></a></li>
-                          <li><a href=""><img  src="img/index/lunbo-bottom1-4.jpg" alt=""></a></li>
-                        </ul>
+              <ul id="ul-imgs" class="transition" style="width:7164px; margin-left:0px;">
+                  <li class="pr">
+                      <a href=""><img src="img/index/lunbo1.jpg" alt=""></a>
+                      <ul  class="df pa">
+                          <li><a href=""><img style="width: 100%;"  src="img/index/lunbo-bottom1-1.jpg" alt=""></a></li>
+                          <li><a href=""><img style="width: 100%;"  src="img/index/lunbo-bottom1-2.jpg" alt=""></a></li>
+                          <li><a href=""><img style="width: 100%;"  src="img/index/lunbo-bottom1-3.jpg" alt=""></a></li>
+                          <li><a href=""><img style="width: 100%;"  src="img/index/lunbo-bottom1-4.jpg" alt=""></a></li>
+                      </ul>
                   </li>
                   <li>
                       <a href="javascript:;"><img src="img/index/lunbo2.jpg" alt=""></a>
@@ -214,7 +218,8 @@
                 </ul>
                  </li>
               </ul>
-              <ul id="ul-idxs">
+              <div>
+              <ul  id="ul-idxs">
                   <li class="active">1</li>
                   <li>2</li>
                   <li>3</li>
@@ -224,42 +229,23 @@
                   <li>7</li>
                   <li>8</li>
               </ul>
+            </div>
               <div id="btn-right"></div>
           </div>
       </main>
       </div>
      
        <!-- 轮播右边 -->
-       <div style="border-right: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6;>
+       <div style="border-right: 1px solid #e6e6e6;height: 486px; border-bottom: 1px solid #e6e6e6;">
         <a href=""><img src="img/index/lb-right.jpg" alt=""></a>
-      <!--   <div class="tabs">
-          <ul class="df" id="tab">
-            <li><a href="javascript:;" data-click="tab" data-id="content1">信息公告</a></li>
-            <li><a href="javascript:;" data-click="tab" data-id="content2">服务公告</a></li>
-          </ul>
-          <div id="container">
-            <div id="content1" style="z-index:9">
-               <ul>
-                 <li> <a href="">精装童书限时0元领</a> </li>
-                 <li> <a href="">会员周 图书5折封顶</a>   </li>
-                 <li> <a href="">童装童鞋秋冬装，限时3件1.5折</a></li>
-                 <li> <a href="">联合品牌暖冬季 跨店2件3折</a></li>
-                 <li> <a href="">英语课程 一对一私教</a></li> 
-               </ul>
-            </div>
-            <div id="content2">
-            </div>
-          </div>
-        </div>
-      </div> -->
       <div id="tabs">
         <ul id="tab" class="df">
-          <li name="lst1">信息公告</li>
-          <li name="lst2">服务公告</li>
+          <li style="cursor: pointer;" name="lst1">信息公告 </li>
+          <li style="cursor: pointer;" name="lst2">服务公告 </li>
         </ul>
         <div class="items" id="lst1">
           <ul>
-            <li> <a href=""> 精装童书限时0元领</a> </li>
+            <li > <a href=""> 精装童书限时0元领</a> </li>
             <li> <a href=""> Lily超级品牌日，限量3件2折</a>  </li>
             <li> <a href=""> 水星家纺 返场48小时 1件3折</a></li>
             <li> <a href="">会员周 图书5折封顶</a></li>

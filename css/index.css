@@ -15,9 +15,12 @@
   font: 12px 'Hiragino Sans GB',"simsun","Arial";
   color: #646464;
   line-height: 34px;
-  padding: 0 10px 0 10px;
+}
+.nav a{
+  color: #646464;
 }
 .nav-item{
+  padding: 0 10px 0 10px;
   margin:auto;width: 1200px; 
 }
 .vip:hover{
@@ -26,8 +29,15 @@
 .nav-item ul {
   padding-left: 20px;
 }
-.nav-item ul li{
-  padding: 0 9px 0 10px;
+.nav-item ul li a{
+  padding: 0 8px 0 8px;
+}
+.bg{
+  background: url(http://img63.ddimg.cn/upload_img/00459/home/head_sprite.png) no-repeat right -311px;
+  padding-right: 23px !important;
+}
+.bg:hover{
+  background: url(http://img63.ddimg.cn/upload_img/00459/home/head_sprite.png) no-repeat right -327px;
 }
 .nav-item span i{
   border-right:1px solid #E6E6E6;
@@ -36,6 +46,10 @@
     background: url(http://img63.ddimg.cn/upload_img/00459/home/home_sprite2.png) no-repeat -40px -86px;;
     width: 15px ;
     height: 14px  ;
+}
+.car1{
+  padding-left: 10px ;
+  background:url(http://img63.ddimg.cn/upload_img/00459/home/home_sprite2.png) no-repeat -40px -77px;
 }
 /* 搜索 */
 /* 搜索 logo  */
@@ -142,10 +156,18 @@
 /* 中部导航 */
 .home_nav{
   width: 200px;
-  height: 494px;
+  height: 488px;
   background: #FAFAFA;
 }
-.home_nav li{padding: 0 1px 0 16px;}
+.home_nav li{
+  padding: 0 1px 0 16px;
+  height: 30px;
+}
+.home_nav li:hover {
+  border-top:2px solid red ;
+  border-bottom:2px solid red ;
+  border-left:2px solid red ;
+}
 .home_nav a{
   color: #323232;
   font: 14px/31px "Microsoft Yahei";
@@ -170,10 +192,13 @@
 }
 
 #ul-imgs>li {
+  position: relative;
   width: 796px;
   float: left;
 }
-
+#ul-imgs>li ul{
+  top:326px;
+}
 #ul-imgs img {
   width: 796px;
 }
@@ -188,6 +213,8 @@
   margin-left: -100px;
 }
 
+
+/* 轮播点 */
 #ul-idxs>li {
   float: left;
   width: 20px;
@@ -228,45 +255,20 @@
   background-image: url(/img/index/right.png);
 }
 /* 开头轮播下面的图 */
-#ul-imgs>li>ul>li{
-  width: 24.95%;
-}
+
 #ul-imgs>li>ul>li>a img{
-  border: 1px solid #E6E6E6;
-  width: 100%;
+  width: 198px;
+  height: 160px;
+}
+#ul-imgs>li>ul>li{
+  width: 198px;
+  border-right:1px solid #DCDCDC ;
+}
+#ul-imgs>li>ul{
+  border-bottom:1px solid #DCDCDC ;
 }
 /* 轮播右边 */
- /* #tabs{
-  width: 202px;
-  height: 143px;
-}
-#tabs li{
-  width: 50%;
-  height: 29px;
-  line-height: 29px;
-  text-align: center;
-  background-color: #fff;
-}
-.items li a{
-  color: #646464;
-  font: 14px/29px "Microsoft Yahei";
-}
-
-.items{
-  height: 136px;
-  border-bottom: 1px solid #DCDCDC;
-}
-.items ul li{
-  color: #646464 ;
-  font-family: "Microsoft Yahei";
-  font-size: 12px;
-  height: 25px;
-  line-height: 25px;
-}
-#tab li{
-	float: left; list-style: none;
-}  */
-
+ 
 #tab li{
   width: 50%;
   height: 29px;
